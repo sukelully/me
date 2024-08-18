@@ -1,11 +1,9 @@
 :root {
     --yellow: #fcc771;
-    --grey: #dfdfdf;
-    --taupe-1: #e9e6c9;
+    /* --grey: #dfdfdf; */
+    --taupe-1: #f0eed9;
     --clay-1: #ca6144;
-    --bluegrey-1: #566683;
-    --darkblue-1: #393e51;
-    --darkblue-2: #1e202b;
+    --grey: #e1e1e1;
     --black: #191919;
     --darkgrey-font: #1f1f21;
     --green-highlight: #88ee9b;
@@ -23,6 +21,10 @@ html {
     background-color: var(--taupe-1);
     font-family: "Outfit", sans-serif;
     color: var(--darkgrey-font);
+}
+
+body {
+    font-size: 1.1rem;
 }
 
 main {
@@ -152,15 +154,18 @@ i {
     display: flex;
     flex-direction: column;
     padding: 4em 0;
-    /* border: 1px solid black; */
     width: 70%;
     align-items: center;
     gap: 2em;
 }
 
 #projects h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 0.5em;
+}
+
+.project-text h3 {
+    font-size: 2rem;
 }
 
 .project {
