@@ -1,5 +1,10 @@
 :root {
-    --yellow-bg: #ffe5a3;
+    --yellow: #fcc771;
+    --grey: #e4e4e4;
+    --taupe-1: #e9e6c9;
+    --clay-1: #ca6144;
+    --bluegrey-1: #566683;
+    --darkblue-1: #393e51;
 }
 
 *,
@@ -12,14 +17,32 @@
 }
 
 html {
-    background-color: var(--yellow-bg);
+    background-color: var(--taupe-1);
 }
 
 #navbar {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     flex-direction: row;
-    height: 3rem;
-    border: 2px solid black;
+    height: 4rem;
     width: 100vw;
+    padding: 0 2em;
+    background-color: var(--darkblue-1);
 }
 
+#navbar * {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-items {
+    width: 30rem;
+    justify-content: space-evenly;
+}
