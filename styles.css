@@ -25,6 +25,16 @@ html {
     background-color: var(--taupe-1);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4em;
+}
+
+/* NAVBAR */
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -59,13 +69,7 @@ html {
     text-align: center;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 4em;
-}
+/* WELCOME SECTION */
 
 #welcome-section {
     display: flex;
@@ -94,20 +98,20 @@ main {
 
 #eng-span {
     font-weight: 500;
-    /* display: inline-block; */
-    width: 10ch; /* Adjust this value based on the length of the longest string */
     text-align: center;
 }
 
+/*  */
+
 @media only screen and (max-width: 700px) {
     main {
-        padding-top: 2em;
+        padding-top: 1em;
     }
 
     #navbar {
         padding-top: 1em;
+        padding-bottom: 0;
         flex-direction: column;
-        /* width: 100vw; */
     }
 
     .navbar-items {
