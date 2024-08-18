@@ -180,6 +180,25 @@ i {
     border-radius: 10%;
 }
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em 0;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1em;
+}
+
 @media only screen and (max-width: 700px) {
     main {
         padding-top: 1em;
@@ -223,6 +242,11 @@ i {
         flex-direction: column;
         align-items: center;
     }
+
+    .bouncy {
+        flex-direction: column-reverse;
+    }
+    
 }
 
 @keyframes job-animation {
