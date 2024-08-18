@@ -1,6 +1,6 @@
 :root {
     --yellow: #fcc771;
-    --grey: #e4e4e4;
+    --grey: #dfdfdf;
     --taupe-1: #e9e6c9;
     --clay-1: #ca6144;
     --bluegrey-1: #566683;
@@ -78,6 +78,7 @@ main {
     padding: 0.5em 2em;
     margin-top: 25vh;
     width: 50rem;
+    height: 70vh;
     gap: 0.5em;
 }
 
@@ -101,7 +102,24 @@ main {
     text-align: center;
 }
 
-/*  */
+/* TECH STACK AND BIO */
+#me {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    height: 60vh;
+}
+
+#tech-stack {
+    height: 30vh;
+}
+
+#bio {
+    display: flex;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 50%;
+}
 
 @media only screen and (max-width: 700px) {
     main {
@@ -110,7 +128,7 @@ main {
 
     #navbar {
         padding-top: 1em;
-        padding-bottom: 0;
+        padding-bottom: 6.5em;
         flex-direction: column;
     }
 
@@ -120,12 +138,17 @@ main {
     }
 
     #welcome-section {
-        width: calc(80vw);
+        width: 100vw;
+        height: 75vh;
     }
 
     #line-break:before {
         content: "";
         display: block;
+    }
+
+    #bio {
+        width: 70%;
     }
 }
 
