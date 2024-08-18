@@ -80,13 +80,9 @@ main {
     font-size: 4rem;
 }
 
-#welcome-section h2 {
+#hello-tag {
     font-size: 2rem;
     text-wrap: wrap;
-}
-
-#welcome-section h2,
-#welcome-section h3 {
     font-weight: 300;
 }
 
@@ -97,6 +93,9 @@ main {
 
 #eng-span {
     font-weight: 500;
+    /* display: inline-block;
+    width: 16ch;
+    text-align: center; */
 }
 
 @media only screen and (max-width: 700px) {
@@ -113,6 +112,7 @@ main {
     #welcome-section {
         width: calc(80vw);
     }
+
     #line-break:before {
         content: "";
         display: block;
