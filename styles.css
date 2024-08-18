@@ -1,0 +1,25 @@
+:root {
+    --yellow-bg: #ffe5a3;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    background-color: var(--yellow-bg);
+}
+
+#navbar {
+    position: fixed;
+    flex-direction: row;
+    height: 3rem;
+    border: 2px solid black;
+    width: 100vw;
+}
+
