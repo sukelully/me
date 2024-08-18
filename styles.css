@@ -119,6 +119,13 @@ main {
     border: 1px solid black;
     margin: 0 auto;
     width: 50%;
+    gap: 2em;
+    align-items: center;
+}
+
+#img-bio {
+    width: 200px;
+    height: auto;
 }
 
 @media only screen and (max-width: 700px) {
@@ -139,7 +146,7 @@ main {
 
     #welcome-section {
         width: 100vw;
-        height: 75vh;
+        height: 73vh;
     }
 
     #line-break:before {
