@@ -7,6 +7,7 @@
     --darkblue-1: #393e51;
     --darkblue-2: #1e202b;
     --black: #191919;
+    --darkgrey-font: #1f1f21;
 }
 
 *,
@@ -15,7 +16,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Outfit", sans-serif;
+    color: var(--darkgrey-font);
 }
 
 html {
@@ -30,11 +32,12 @@ html {
     height: 3.5rem;
     width: 100vw;
     padding: 0 2em;
-    background-color: var(--darkblue-1);
+    background-color: var(--taupe-1);
+    z-index: 1;
 }
 
 #navbar * {
-    color: white;
+    color: var(--darkgrey-font);
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -49,38 +52,207 @@ html {
     justify-content: space-evenly;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 1500px;
-    border: 2px solid black;
     padding-top: 4rem;
 }
 
 #welcome-section {
-    background-color: var(--clay-1);
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    transform: skew(20deg);
     padding: 0.5em 2em;
     margin-top: 25vh;
+    width: 50rem;
+    gap: 0.5em;
 }
 
-#welcome-section > * {
-    transform: skew(-20deg);
+#welcome-section h1 {
+    font-size: 4rem;
 }
 
-@keyframes job-animation {
-    50% {
-        content: "a full-stack developer";
-    }
-    100% {
-        content: "an electronic engineer";
-    }
+#welcome-section h2 {
+    font-size: 2rem;
+    text-wrap: wrap;
+}
+
+#welcome-section h2,
+#welcome-section h3 {
+    font-weight: 300;
 }
 
 #eng-span:before {
     content: "an electronic engineer";
     animation: job-animation 8s infinite;
+}
+
+#eng-span {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 700px) {
+    #navbar {
+        flex-direction: column;
+        /* width: 100vw; */
+    }
+
+    .navbar-items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #welcome-section {
+        width: calc(80vw);
+    }
+    #line-break:before {
+        content: "";
+        display: block;
+    }
+}
+
+@keyframes job-animation {
+    5% {
+        content: "an electronic engineer";
+    }
+    10% {
+        content: "an electronic engineer";
+    }
+    11% {
+        content: "an electronic enginee";
+    }
+    12% {
+        content: "an electronic engine";
+    }
+    13% {
+        content: "an electronic engin";
+    }
+    14% {
+        content: "an electronic engi";
+    }
+    15% {
+        content: "an electronic eng";
+    }
+    16% {
+        content: "an electronic en";
+    }
+    17% {
+        content: "an electronic e";
+    }
+    18% {
+        content: "an electronic";
+    }
+    19% {
+        content: "an electroni";
+    }
+    20% {
+        content: "an electron";
+    }
+    21% {
+        content: "an electro";
+    }
+    22% {
+        content: "an electr";
+    }
+    23% {
+        content: "an elect";
+    }
+    24% {
+        content: "an elec";
+    }
+    25% {
+        content: "an ele";
+    }
+    26% {
+        content: "an el";
+    }
+    27% {
+        content: "an e";
+    }
+    28% {
+        content: "an";
+    }
+    29% {
+        content: "a";
+        opacity: 100%;
+    }
+    30% {
+        content: "a";
+        opacity: 0%;
+    }
+    33% {
+        opacity: 0%;
+    }
+    34% {
+        content: "a";
+        opacity: 100%;
+    }
+    35% {
+        content: "a f";
+    }
+    36% {
+        content: "a fu";
+    }
+    37% {
+        content: "a ful";
+    }
+    38% {
+        content: "a full";
+    }
+    39% {
+        content: "a full-s";
+    }
+    40% {
+        content: "a full-st";
+    }
+    41% {
+        content: "a full-sta";
+    }
+    42% {
+        content: "a full-stac";
+    }
+    43% {
+        content: "a full-stack";
+    }
+    44% {
+        content: "a full-stack d";
+    }
+    45% {
+        content: "a full-stack de";
+    }
+    46% {
+        content: "a full-stack dev";
+    }
+    47% {
+        content: "a full-stack deve";
+    }
+    48% {
+        content: "a full-stack devel";
+    }
+    49% {
+        content: "a full-stack develo";
+    }
+    50% {
+        content: "a full-stack develop";
+    }
+    51% {
+        content: "a full-stack develope";
+    }
+    52% {
+        content: "a full-stack developer";
+    }
+    90% {
+        content: "a full-stack developer";
+    }
+    100% {
+        content: "a full-stack developer";
+    }
 }
