@@ -8,6 +8,7 @@
     --darkblue-2: #1e202b;
     --black: #191919;
     --darkgrey-font: #1f1f21;
+    --green-highlight: #88ee9b;
 }
 
 *,
@@ -63,7 +64,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 4em;
 }
 
 #welcome-section {
@@ -93,13 +94,18 @@ main {
 
 #eng-span {
     font-weight: 500;
+    /* display: inline-block; */
+    width: 10ch; /* Adjust this value based on the length of the longest string */
+    text-align: center;
 }
 
 @media only screen and (max-width: 700px) {
     main {
         padding-top: 3em;
     }
+
     #navbar {
+        padding-top: 1em;
         flex-direction: column;
         /* width: 100vw; */
     }
@@ -120,139 +126,196 @@ main {
 }
 
 @keyframes job-animation {
+    0% {
+        content: "an electronic engineer";
+        text-decoration: none;
+    }
+
     5% {
         content: "an electronic engineer";
+        text-decoration: none;
     }
+
     10% {
         content: "an electronic engineer";
     }
+
     11% {
         content: "an electronic enginee";
     }
+
     12% {
         content: "an electronic engine";
     }
+
     13% {
         content: "an electronic engin";
     }
+
     14% {
         content: "an electronic engi";
     }
+
     15% {
         content: "an electronic eng";
     }
+
     16% {
         content: "an electronic en";
     }
+
     17% {
         content: "an electronic e";
     }
+
     18% {
         content: "an electronic";
     }
+
     19% {
         content: "an electroni";
     }
+
     20% {
         content: "an electron";
     }
+
     21% {
         content: "an electro";
     }
+
     22% {
         content: "an electr";
     }
+
     23% {
         content: "an elect";
     }
+
     24% {
         content: "an elec";
     }
+
     25% {
         content: "an ele";
     }
+
     26% {
         content: "an el";
     }
+
     27% {
         content: "an e";
     }
+
     28% {
         content: "an";
     }
+
     29% {
         content: "a";
+        text-decoration: none;
+    }
+
+    29.9% {
         opacity: 100%;
     }
+
     30% {
         content: "a";
         opacity: 0%;
     }
-    33% {
+
+    33.9% {
         opacity: 0%;
     }
+
     34% {
         content: "a";
         opacity: 100%;
+        text-decoration: none;
     }
+
     35% {
         content: "a f";
     }
+
     36% {
         content: "a fu";
     }
+
     37% {
         content: "a ful";
     }
+
     38% {
         content: "a full";
     }
+
     39% {
         content: "a full-s";
     }
+
     40% {
         content: "a full-st";
     }
+
     41% {
         content: "a full-sta";
     }
+
     42% {
         content: "a full-stac";
     }
+
     43% {
         content: "a full-stack";
     }
+
     44% {
         content: "a full-stack d";
     }
+
     45% {
         content: "a full-stack de";
     }
+
     46% {
         content: "a full-stack dev";
     }
+
     47% {
         content: "a full-stack deve";
     }
+
     48% {
         content: "a full-stack devel";
     }
+
     49% {
         content: "a full-stack develo";
     }
+
     50% {
         content: "a full-stack develop";
     }
+
     51% {
         content: "a full-stack develope";
+        text-decoration: none;
+        background-color: transparent;
     }
+
     52% {
         content: "a full-stack developer";
+        text-decoration: underline;
+        background-color: var(--green-highlight);
     }
-    90% {
-        content: "a full-stack developer";
-    }
+
     100% {
         content: "a full-stack developer";
+        text-decoration: underline;
+        background-color: var(--green-highlight);
     }
+
 }
