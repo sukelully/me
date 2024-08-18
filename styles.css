@@ -5,6 +5,8 @@
     --clay-1: #ca6144;
     --bluegrey-1: #566683;
     --darkblue-1: #393e51;
+    --darkblue-2: #1e202b;
+    --black: #191919;
 }
 
 *,
@@ -25,7 +27,7 @@ html {
     justify-content: space-between;
     position: fixed;
     flex-direction: row;
-    height: 4rem;
+    height: 3.5rem;
     width: 100vw;
     padding: 0 2em;
     background-color: var(--darkblue-1);
@@ -45,4 +47,40 @@ html {
 .navbar-items {
     width: 30rem;
     justify-content: space-evenly;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1500px;
+    border: 2px solid black;
+    padding-top: 4rem;
+}
+
+#welcome-section {
+    background-color: var(--clay-1);
+    text-align: center;
+    transform: skew(20deg);
+    padding: 0.5em 2em;
+    margin-top: 25vh;
+}
+
+#welcome-section > * {
+    transform: skew(-20deg);
+}
+
+@keyframes job-animation {
+    50% {
+        content: "a full-stack developer";
+    }
+    100% {
+        content: "an electronic engineer";
+    }
+}
+
+#eng-span:before {
+    content: "an electronic engineer";
+    animation: job-animation 8s infinite;
 }
